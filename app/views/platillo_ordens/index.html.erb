@@ -3,8 +3,8 @@
 <table>
   <thead>
     <tr>
-      <th>Id orden</th>
-      <th>Id platillo</th>
+      <th>Idplatillo</th>
+      <th>Idorden</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -12,8 +12,8 @@
   <tbody>
     <% @platillo_ordens.each do |platillo_orden| %>
       <tr>
-        <td><%= platillo_orden.id_orden %></td>
-        <td><%= platillo_orden.id_platillo %></td>
+        <td><%= platillo_orden.idplatillo %></td>
+        <td><%= platillo_orden.idorden %></td>
         <td><%= link_to 'Show', platillo_orden %></td>
         <td><%= link_to 'Edit', edit_platillo_orden_path(platillo_orden) %></td>
         <td><%= link_to 'Destroy', platillo_orden, method: :delete, data: { confirm: 'Are you sure?' } %></td>

@@ -69,6 +69,6 @@ class PlatilloOrdensController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def platillo_orden_params
-      params.require(:platillo_orden).permit(:id_orden, :id_platillo)
+      params.require(:platillo_orden).permit(:idplatillo, :idorden)
     end
 end

@@ -28,6 +28,7 @@ class PlatillosController < ApplicationController
 
     respond_to do |format|
       if @platillo.save
+         
         format.html { redirect_to @platillo, notice: 'Platillo was successfully created.' }
         format.json { render :show, status: :created, location: @platillo }
       else
@@ -69,6 +70,6 @@ class PlatillosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def platillo_params
-      params.require(:platillo).permit(:nombre, :precio, :descripcion)
+      params.require(:platillo).permit(:nombre, :precio, :descripcion, :categoria, :image)
     end
 end

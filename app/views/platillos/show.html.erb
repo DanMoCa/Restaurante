@@ -6,11 +6,6 @@
 </p>
 
 <p>
-  <strong>Categoria:</strong>
-   <%= @platillo.categoria %>
-</p>
-
-<p>
   <strong>Precio:</strong>
   <%= @platillo.precio %>
 </p>
@@ -18,6 +13,16 @@
 <p>
   <strong>Descripcion:</strong>
   <%= @platillo.descripcion %>
+</p>
+
+<p>
+  <strong>Categoria:</strong>
+  <%= @platillo.categoria %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+   <%= image_tag @platillo.image_url(:detail).to_s%>
 </p>
 
 <%= link_to 'Edit', edit_platillo_path(@platillo) %> |

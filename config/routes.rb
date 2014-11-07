@@ -1,10 +1,10 @@
-Rails.application.routes.draw do
+Rails.application.routes.draw do   
+  resources :platillos
+
   resources :platillo_ordens
 
   resources :ordens
 
-  resources :platillos
-   
    root 'platillos#index'
 
   # The priority is based upon order of creation: first created -> highest priority.

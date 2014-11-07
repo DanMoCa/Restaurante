@@ -18,7 +18,7 @@ class PlatilloOrdensControllerTest < ActionController::TestCase
 
   test "should create platillo_orden" do
     assert_difference('PlatilloOrden.count') do
-      post :create, platillo_orden: { id_orden: @platillo_orden.id_orden, id_platillo: @platillo_orden.id_platillo }
+      post :create, platillo_orden: { idorden: @platillo_orden.idorden, idplatillo: @platillo_orden.idplatillo }
     end
 
     assert_redirected_to platillo_orden_path(assigns(:platillo_orden))
@@ -35,7 +35,7 @@ class PlatilloOrdensControllerTest < ActionController::TestCase
   end
 
   test "should update platillo_orden" do
-    patch :update, id: @platillo_orden, platillo_orden: { id_orden: @platillo_orden.id_orden, id_platillo: @platillo_orden.id_platillo }
+    patch :update, id: @platillo_orden, platillo_orden: { idorden: @platillo_orden.idorden, idplatillo: @platillo_orden.idplatillo }
     assert_redirected_to platillo_orden_path(assigns(:platillo_orden))
   end
 

@@ -18,7 +18,7 @@ class PlatillosControllerTest < ActionController::TestCase
 
   test "should create platillo" do
     assert_difference('Platillo.count') do
-      post :create, platillo: { descripcion: @platillo.descripcion, nombre: @platillo.nombre, precio: @platillo.precio }
+      post :create, platillo: { categoria: @platillo.categoria, descripcion: @platillo.descripcion, image: @platillo.image, nombre: @platillo.nombre, precio: @platillo.precio }
     end
 
     assert_redirected_to platillo_path(assigns(:platillo))
@@ -35,7 +35,7 @@ class PlatillosControllerTest < ActionController::TestCase
   end
 
   test "should update platillo" do
-    patch :update, id: @platillo, platillo: { descripcion: @platillo.descripcion, nombre: @platillo.nombre, precio: @platillo.precio }
+    patch :update, id: @platillo, platillo: { categoria: @platillo.categoria, descripcion: @platillo.descripcion, image: @platillo.image, nombre: @platillo.nombre, precio: @platillo.precio }
     assert_redirected_to platillo_path(assigns(:platillo))
   end
 

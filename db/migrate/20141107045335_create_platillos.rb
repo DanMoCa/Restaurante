@@ -4,6 +4,8 @@ class CreatePlatillos < ActiveRecord::Migration
       t.string :nombre
       t.integer :precio
       t.text :descripcion
+      t.string :categoria
+      t.string :image
 
       t.timestamps
     end

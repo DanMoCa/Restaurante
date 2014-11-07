@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141106221401) do
+ActiveRecord::Schema.define(version: 20141107045335) do
 
   create_table "ordens", force: true do |t|
     t.integer  "total"
@@ -20,17 +20,18 @@ ActiveRecord::Schema.define(version: 20141106221401) do
   end
 
   create_table "platillo_ordens", force: true do |t|
-    t.integer "id_orden"
-    t.integer "id_platillo"
+    t.integer "idplatillo"
+    t.integer "idorden"
   end
 
   create_table "platillos", force: true do |t|
     t.string   "nombre"
     t.integer  "precio"
     t.text     "descripcion"
+    t.string   "categoria"
+    t.string   "image"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "categoria"
   end
 
 end

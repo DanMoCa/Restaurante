@@ -1,8 +1,8 @@
 class CreatePlatilloOrdens < ActiveRecord::Migration
   def change
     create_table :platillo_ordens do |t|
-      t.integer :id_orden
-      t.integer :id_platillo
+      t.integer :idplatillo
+      t.integer :idorden
     end
   end
 end
