@@ -1,0 +1,27 @@
+<h1>Listing platillo_ordens</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id orden</th>
+      <th>Id platillo</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @platillo_ordens.each do |platillo_orden| %>
+      <tr>
+        <td><%= platillo_orden.id_orden %></td>
+        <td><%= platillo_orden.id_platillo %></td>
+        <td><%= link_to 'Show', platillo_orden %></td>
+        <td><%= link_to 'Edit', edit_platillo_orden_path(platillo_orden) %></td>
+        <td><%= link_to 'Destroy', platillo_orden, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Platillo orden', new_platillo_orden_path %>

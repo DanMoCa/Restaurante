@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id orden:</strong>
+  <%= @platillo_orden.id_orden %>
+</p>
+
+<p>
+  <strong>Id platillo:</strong>
+  <%= @platillo_orden.id_platillo %>
+</p>
+
+<%= link_to 'Edit', edit_platillo_orden_path(@platillo_orden) %> |
+<%= link_to 'Back', platillo_ordens_path %>

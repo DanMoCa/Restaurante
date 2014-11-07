@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id_orden: 1
+  id_platillo: 1
+
+two:
+  id_orden: 1
+  id_platillo: 1
