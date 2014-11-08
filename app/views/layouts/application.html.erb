@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Moe Moe Pizza</title>
+  <title>Calonise's Pizza</title>
   <%= stylesheet_link_tag 'platillo.css' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+ <!-- Header -->
+      <div id = "header"> 
+         <p> Calonise's Pizza</p>
+      </div>
+      
 <%= yield %>
 
-</body>
+    <!-- FOOTER -->
+      <div id = "footer">
+         <p>Created by Dynamic Solutions | Chihuahua, Chihuahua, MX | Last edit November 2014</p>
+      </div>
+   </body>
+
 </html>

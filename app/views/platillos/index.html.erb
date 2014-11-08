@@ -1,18 +1,12 @@
-<%= stylesheet_link_tag "stylesheet.css"%>
-
-<div>
-<h1>Calonise Old Style</h1>
-</div>
 
 
-<div>
-   <%= link_to image_tag("/imagenes/picon.jpg", :border => 0, :alt => '', :title => ''), pizza_forma_path, :class => 'dock-item' %>
-   <%= link_to image_tag("/imagenes/sicon.jpg", :border => 0, :alt => '', :title => ''), pasta_forma_path, :class => 'dock-item' %>
-   <%= link_to image_tag("/imagenes/micon.jpg", :border => 0, :alt => '', :title => ''), postres_forma_path, :class => 'dock-item' %>
-   <%= link_to image_tag("/imagenes/bicon.jpg", :border => 0, :alt => '', :title => ''), bebidas_forma_path, :class => 'dock-item' %>
+<div class = "right">
+  <p><%= link_to image_tag("/imagenes/picon.jpg", :border => 0, :alt => '', :title => ''), pizza_forma_path, :class => 'dock-item', :id => 'perfil' %>
+  <%= link_to image_tag("/imagenes/sicon.jpg", :border => 0, :alt => '', :title => ''), pasta_forma_path, :class => 'dock-item', :id => 'perfil' %>
+  <%= link_to image_tag("/imagenes/micon.jpg", :border => 0, :alt => '', :title => ''), postres_forma_path, :class => 'dock-item', :id => 'perfil' %>
+  <%= link_to image_tag("/imagenes/bicon.jpg", :border => 0, :alt => '', :title => ''), bebidas_forma_path, :class => 'dock-item', :id => 'perfil' %></p>
+  <p><%= link_to image_tag("/imagenes/menu.gif", size: "200x100"), menu_forma_path, :class => 'dock-item', :id => 'perfil' %></p>
 </div>
 
 <p></p>
 <p></p>
-
-<%= link_to image_tag("/imagenes/menu.gif", size: "200x100"), menu_forma_path, :class => 'dock-item' %>
