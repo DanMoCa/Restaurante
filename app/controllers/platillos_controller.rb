@@ -4,9 +4,28 @@ class PlatillosController < ApplicationController
   # GET /platillos
   # GET /platillos.json
   def index
-    @platillos = Platillo.all
   end
 
+  def menu
+     @platillos = Platillo.all
+  end
+   
+  def pizza
+      @platillos = Platillo.where("categoria = 'Pizza'")
+  end
+   
+  def pasta
+     @platillos = Platillo.where("categoria = 'Pasta'")
+  end
+   
+   def postres
+     @platillos = Platillo.where("categoria = 'Postres'")
+  end
+   
+   def bebidas
+     @platillos = Platillo.where("categoria = 'Bebidas'")
+  end
+   
   # GET /platillos/1
   # GET /platillos/1.json
   def show
@@ -21,6 +40,8 @@ class PlatillosController < ApplicationController
   def edit
   end
 
+   #GET /platillos/menu
+   
   # POST /platillos
   # POST /platillos.json
   def create

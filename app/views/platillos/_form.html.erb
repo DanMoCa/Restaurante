@@ -25,10 +25,10 @@
   </div>
   <div class="field">
     <%= f.label :categoria %><br>
-    <%= f.text_field :categoria %>
+     <%= f.select(:categoria, ['Pizza','Pasta','Postres','Bebidas']) %><p></p>
   </div>
   <div class="field">
-    <%= f.file_field :image %><br>
+    <%= f.file_field :image %><br><p></p>
   </div>
   
   <div class="actions">

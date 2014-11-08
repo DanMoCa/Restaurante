@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141107045335) do
+ActiveRecord::Schema.define(version: 20141108060443) do
 
   create_table "ordens", force: true do |t|
     t.integer  "total"
@@ -30,6 +30,11 @@ ActiveRecord::Schema.define(version: 20141107045335) do
     t.text     "descripcion"
     t.string   "categoria"
     t.string   "image"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "welcomes", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
   end

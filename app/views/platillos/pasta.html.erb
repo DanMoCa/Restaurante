@@ -1,0 +1,27 @@
+<h1>Pastas</h1>
+<div class="datagrid">
+<table>
+  <thead>
+    <tr>
+      <th>Image</th>
+      <th>Nombre</th>
+      <th>Precio</th>
+      <th>Descripcion</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @platillos.each do |platillo| %>
+      <tr>
+        <td><%= image_tag platillo.image_url(:thumb).to_s%></td>
+        <td><%= platillo.nombre %></td>
+        <td><%= platillo.precio %></td>
+        <td><%= platillo.descripcion %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+<br>
+
+<%= link_to image_tag("/imagenes/BackButton.png", size: "200x100"), platillos_path, :class => 'dock-item' %>

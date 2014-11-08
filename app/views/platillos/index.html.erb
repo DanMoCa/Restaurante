@@ -1,33 +1,18 @@
-<h1>Listing platillos</h1>
-<div class="datagrid">
-<table>
-  <thead>
-    <tr>
-      <th>Nombre</th>
-      <th>Precio</th>
-      <th>Descripcion</th>
-      <th>Categoria</th>
-      <th>Image</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+<%= stylesheet_link_tag "stylesheet.css"%>
 
-  <tbody>
-    <% @platillos.each do |platillo| %>
-      <tr>
-        <td><%= platillo.nombre %></td>
-        <td><%= platillo.precio %></td>
-        <td><%= platillo.descripcion %></td>
-        <td><%= platillo.categoria %></td>
-        <td><%= image_tag platillo.image_url(:thumb).to_s%></td>
-        <td><%= link_to 'Show', platillo %></td>
-        <td><%= link_to 'Edit', edit_platillo_path(platillo) %></td>
-        <td><%= link_to 'Destroy', platillo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<div>
+<h1>Calonise Old Style</h1>
 </div>
-<br>
 
-<%= link_to image_tag("/imagenes/new.jpg", :border => 0, :alt => '', :title => ''), new_platillo_path, :class => 'dock-item' %>
+
+<div>
+   <%= link_to image_tag("/imagenes/picon.jpg", :border => 0, :alt => '', :title => ''), pizza_forma_path, :class => 'dock-item' %>
+   <%= link_to image_tag("/imagenes/sicon.jpg", :border => 0, :alt => '', :title => ''), pasta_forma_path, :class => 'dock-item' %>
+   <%= link_to image_tag("/imagenes/micon.jpg", :border => 0, :alt => '', :title => ''), postres_forma_path, :class => 'dock-item' %>
+   <%= link_to image_tag("/imagenes/bicon.jpg", :border => 0, :alt => '', :title => ''), bebidas_forma_path, :class => 'dock-item' %>
+</div>
+
+<p></p>
+<p></p>
+
+<%= link_to image_tag("/imagenes/menu.gif", size: "200x100"), menu_forma_path, :class => 'dock-item' %>
