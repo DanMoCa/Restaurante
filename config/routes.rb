@@ -5,8 +5,15 @@ Rails.application.routes.draw do
 
   resources :ordens
 
-   root 'platillos#index'
-
+   root 'welcome#index'
+   
+   get '/pizza' => 'platillos#pizza', :as => 'pizza_forma'
+   get '/pasta' => 'platillos#pasta', :as => 'pasta_forma'
+   get '/postres' => 'platillos#postres', :as => 'postres_forma'
+   get '/bebidas' => 'platillos#bebidas', :as => 'bebidas_forma'
+   get '/menu' => 'platillos#menu', :as => 'menu_forma'
+   
+   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
