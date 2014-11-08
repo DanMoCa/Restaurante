@@ -25,13 +25,13 @@
   </div>
   <div class="field">
     <%= f.label :categoria %><br>
-     <%= f.select :categoria, options_for_select(['Pizza','Pasta','Postre','Bebida']), :class => 'genForm_dropBox' %><p></p>
+    <%= f.text_field :categoria %>
   </div>
   <div class="field">
-     <%= f.file_field :image %><br><p></p>
+    <%= f.file_field :image %><br>
   </div>
   
   <div class="actions">
-     <%= f.submit %><p></p>
+    <%= f.submit %>
   </div>
 <% end %>
