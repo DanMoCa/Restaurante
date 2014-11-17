@@ -9,7 +9,14 @@
 <body>
  <!-- Header -->
       <div id = "header"> 
-         <p> Calonise's Pizza</p>
+         <p> Calonise's Pizza
+
+  <%= link_to cart_path do%>
+    Mi Pedido
+  <%end%>
+
+         </p>
+         
       </div>
       
 <%= yield %>

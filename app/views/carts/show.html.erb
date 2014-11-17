@@ -1,0 +1,26 @@
+
+<h1>Orden</h1>
+<div class="datagrid">
+<table>
+  <thead>
+    <tr>
+      <th>Imagen</th>
+      <th>Nombre</th>
+      <th>Precio</th>
+      <th>Descripcion</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cart.each do |platillo| %>
+      <tr>
+        <td><%= platillo[1].fetch(image_url(:thumb).to_s) %></td>
+        <td><%=  platillo[1].fetch("nombre") %></td> 
+        <td><%= platillo[1].fetch("precio") %></td>
+        <td><%=  platillo[1].fetch("descripcion") %></td>   
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+<br>

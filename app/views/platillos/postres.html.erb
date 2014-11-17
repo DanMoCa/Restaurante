@@ -1,3 +1,4 @@
+//= require add_to_cart.js
 <h1>Postres</h1>
 <div class="datagrid">
 <table>
@@ -7,6 +8,7 @@
       <th>Nombre</th>
       <th>Precio</th>
       <th>Descripcion</th>
+      <th>Agregar a Pedido</th>
     </tr>
   </thead>
 
@@ -17,6 +19,8 @@
         <td><%= platillo.nombre %></td>
         <td><%= platillo.precio %></td>
         <td><%= platillo.descripcion %></td>
+        <td><%= link_to image_tag("/imagenes/carro.gif"), '#',
+  :onclick => 'addToCart(JSON.parse(\''+platillo.to_json+'\'))' %></td> 
       </tr>
     <% end %>
   </tbody>

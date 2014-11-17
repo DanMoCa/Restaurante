@@ -1,0 +1,21 @@
+<h1>Orden</h1>
+<div class="datagrid">
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Precio</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @cart.each do |platillo| %>
+      <tr>
+        <td><%= platillo[1].fetch("nombre") %></td>
+        <td><%=  platillo[1].fetch("precio") %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+<br>
+<%= link_to image_tag("/imagenes/aceptar.gif"), platillos_path, :class => 'dock-item' %>

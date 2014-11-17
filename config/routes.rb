@@ -1,4 +1,6 @@
 Rails.application.routes.draw do   
+  get 'cart/index'
+  
   resources :platillos
 
   resources :platillo_ordens
@@ -12,6 +14,13 @@ Rails.application.routes.draw do
    get '/postres' => 'platillos#postres', :as => 'postres_forma'
    get '/bebidas' => 'platillos#bebidas', :as => 'bebidas_forma'
    get '/menu' => 'platillos#menu', :as => 'menu_forma'
+    #cart
+  get '/cart' => 'carts#index'
+  post '/cart/show' => 'carts#show', :as => 'Carrito'
+  resource :cart, only: [:show] do
+    put 'add/:platillo.nombre', to: 'carts#add', as: :add_to
+    put 'remove/:platillo.nombre', to: 'carts#remove', as: :remove_from
+  end
    
    
   # The priority is based upon order of creation: first created -> highest priority.
