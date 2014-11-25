@@ -1,2 +1,6 @@
-TLDR
-Baylive, ya nomas falta limpiar localstorage.clear() en un boton de @hacer orden en _show.html.erg (views/carts/)
+Faltan detalles visuales
+
+pero confio en que el profe dira "Pues se ve que le echaron ganas, en especial flores, le voy a dar trabajo... y reta en el smash!"
+
+
+:D?
