@@ -5,7 +5,6 @@ pero confio en que el profe dira "Pues se ve que le echaron ganas, en especial f
 
 :D?
 
-
 Proyecto para Desarrollo Web
 ========================
 
@@ -13,14 +12,13 @@ Como Clonar este repositorio
 ----
 
 ```
-Insert how to pull here
+git clone https://github.com/DanMoCa/Restaurante.git
 ```
-
-
-
-Fuyukai Desu
 ----
 
+Heroku link
+
+https://shielded-badlands-4300.herokuapp.com/
 
 **Integrantes**
 - Daniel Alejandro Montes Camacho
