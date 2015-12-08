@@ -1,10 +1,3 @@
-Faltan detalles visuales
-
-pero confio en que el profe dira "Pues se ve que le echaron ganas, en especial flores, le voy a dar trabajo... y reta en el smash!"
-
-
-:D?
-
 Proyecto para Desarrollo Web
 ========================
 
@@ -26,4 +19,6 @@ https://shielded-badlands-4300.herokuapp.com/
 - Ana Karen Galvan Ontiveros
 
 
-![alt tag](http://img2.wikia.nocookie.net/__cb20140730162923/mipequeoponyfanlabor/es/images/a/ae/Mudkip.png)
+Here, have a Mudkip.
+
+http://img2.wikia.nocookie.net/__cb20140730162923/mipequeoponyfanlabor/es/images/a/ae/Mudkip.png
